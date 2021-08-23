@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+
+    overflow-x: hidden;
+}
+
+.cabecalho {
+      width: 100%;
+      height: 120px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #FFF6F6;
+}
+
+.cabecalho a {
+    text-decoration: none;
+    font-family: 'Bungee Hairline', cursive;
+    margin: 0px 50px 0px 50px;
+    font-size: 40px;
+    color: #5B3D3D;
+    font-weight: bold;
+}
+.cabecalho a:hover{
+     
+     border-bottom: solid 1px black;
+}
+
+.cabecalho a:nth-child(1) {
+
+    font-size: 30px;
+}
+.cabecalho a:nth-child(3) {
+
+    font-size: 30px;
+}
+
+.conteudo-principal{
+    
+  display: flex;
+}
+
+.div-imagem{
+    width: 50%;
+    overflow: hidden;
+    height: auto;
+
+}
+
+.div-imagem img{
+    transform: rotate(100deg );
+            animation: mac 1s;
+            position: absolute;
+            margin-top: 60px;
+            left: -100px;
+}
+
+
+
+@keyframes mac{
+
+    0% {
+        left: -800px;
+      }
+      100% {
+        left: -100px;
+      }
+}
+
+.texto {
+
+    border: 3px solid #faf7f7;
+       width: 40rem;
+       position: absolute;
+       top: 13rem;
+       left: 650px;
+       height: 30rem;
+       animation: texto 1s;
+       border-radius: 30px;
+       text-align: center;
+       background-color: #FFF6F6;
+   }
+   .texto h1{
+    font-family: 'Courgette', cursive;
+    margin-top: 80px;
+   }
+   .texto  p{
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 40px;
+    font-size: 20px;
+   }
+
+   @keyframes texto{
+    0% {
+        left: 1400px;
+      }
+      100% {
+        left: 650px;
+      }
+   }
+
+   .conteudo-musicas{
+         width: 100%;
+         height: 60px;
+         border: 1px solid black;
+   }
